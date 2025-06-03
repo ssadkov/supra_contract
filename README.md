@@ -14,6 +14,10 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Entropy-Foundation/sup
 docker compose up -d
 ```
 
+![docker compose up](images/pull.png)
+
+![docker compose](images/compose.png)
+
 If you see `dockerDesktopLinuxEngine` error:
 - Open **Docker Desktop**
 - Ensure that **Linux containers** mode is enabled (not Windows containers)
@@ -67,11 +71,19 @@ Tip: use a strong password.
 supra move account fund-with-faucet --profile sadkov --rpc-url https://rpc-testnet.supra.com
 ```
 
+![Account funding example](images/fund.png)
+
+Here is how a successful balance top-up looks in the testnet:
+
+![Testnet balance after funding](images/testnetfund.png)
+
 ### 6. Initialize a Move package
 
 ```bash
 supra move tool init --package-dir /supra/configs/move_workspace/hellosmart --name hello
 ```
+
+![Move package template structure](images/packagetemplate.png)
 
 ### 7. Manually check your Move.toml
 
